@@ -1,0 +1,617 @@
+@import "variables.less";
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins/gradients.less";
+@import "bootstrap/mixins/panels.less";
+
+
+/**********************************************************************
+ * Dialoog
+/**********************************************************************/
+#dialog div.formrow {
+	min-height: 20px;
+	height: auto !important;
+	_height: 20px;
+	/*width: 596px;*/
+	border: 1px solid #be9e55;
+	border-right: 0;
+	padding: 10px 4px;
+	background-image: url('../images/g_gold.jpg');
+	background-repeat: repeat-y;
+	background-position:right top;
+	margin: -1px 0 0 0; /* Zorgt voor 1 px border tussen aangrenzende divs */
+	overflow: hidden;
+}
+
+#dialog div.message {
+	min-height: 40px;
+	height: auto !important;
+	height: 40px;
+}
+
+#dialog div.linkline {
+	padding-top: 20px;
+	width: 528px;
+}
+
+#dialog div.descDiv {height: 120px;}
+#dialog div.onehalf {height: 35px;}
+
+#dialog div.dialogquestion {
+	float:left;
+	width: 35%;
+}
+
+#dialog div.dialoganswer {
+	float: right;
+	width: 65%;
+	text-align: left;
+}
+
+#dialog div.dialoganswer input {width: 200px;}
+#dialog div.dialoganswer input.s70 {width: 70px;}
+#dialog div.dialoganswer input.s40 {width: 40px;}
+#dialog div.dialoganswer input.s20 {width: 20px;}
+#dialog div.dialoganswer input.s110 {width: 110px;}
+#dialog div.dialoganswer input.s140 {width: 140px;}
+#dialog div.dialoganswer select {width: 250px;}
+#dialog div.dialoganswer textarea {width: 285px;}
+#dialog div.dialoganswer .radio {width: 30px;}
+#dialog div.dialoganswer .optionhor {display: inline;}
+
+#dialog div.description {height: 110px;}
+
+#dialog .helptext {
+	cursor: help;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: italic;
+	color: #009900;
+	margin-left: 5px;
+	width: 20px;
+	border: #004380 0px solid;
+}
+
+#dialog .validation-advice {
+	color: red;
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+
+#dialog .optionSpan {padding: 0.5em;}
+#dialog .validation-failed {border: 1px solid red;}
+#dialog .fileinput_container {position: relative;}
+
+#dialog .fileinput {
+	position: relative;
+/******geeft css waarschuwing***********
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+****************************************/
+	opacity: 0;
+	z-index: 2;
+}
+
+#dialog .fileinput_label {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	color: #be9e55;
+	text-decoration: underline;
+}
+
+/**************************************************************************
+	This is the css for the layout and styling of the eforms.
+***************************************************************************/
+
+.FormPage {
+	padding-top: 214px;
+}
+
+/*************************************************************
+ * content
+ *************************************************************/
+div#eformsContent {
+	margin-top: 14px;
+}
+
+ div#content {
+	min-height: 480px;
+	height: auto !important;
+	height: 480px;
+}
+
+p.noscript {
+	display: inline;
+}
+
+/*
+div#eformsContent div {
+	height: 1%;
+}
+*/
+
+.formtable th, .formtable caption {
+	color: black;
+}
+
+.eformsDigid {
+	text-align: center;
+}
+
+#linkimage {
+	position: relative;
+	float: left;
+}
+
+div#linktext {
+	position: relative;
+	float: right;
+	padding-left: 5px;
+	width: 175px;
+	text-align: left;
+	height: 100px;
+}
+
+.digidlink {
+	margin: auto;
+	padding-top	: 10px;
+	width: 250px;
+	height: 100px;
+}
+
+ul {
+	margin-top: 0;
+	margin-left: 0;
+	padding-left: 19px;
+}
+
+/*header */
+
+span.userinfo {
+	display: none;
+	position: absolute;
+	top: 50px;
+}
+
+/* Forms */
+.formrow {
+	border: none;
+	clear: both;
+	padding-top: 1px;
+	margin-bottom: 3.0px;
+}
+
+.formrow .formlabel {
+	float: left;
+	width: 30%;
+	margin-top: 3px;
+	margin-right: 5.0px;
+	font-family: verdana, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	text-align: left;
+}
+
+fieldset.previewformfield .formrow .formlabel {
+	margin-top: 0;
+}
+
+fieldset.previewformfield {
+	border: none;
+	padding: 0;
+}
+
+fieldset.formrow {
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+.optionvert {
+	display: block;
+	margin-left: 20px;
+	margin-bottom: 2px;
+	padding-top: 2px;
+}
+
+.optionhor {
+	display: inline;
+}
+
+input.verticaloption{
+	float: left;
+	clear: left;
+}
+
+.mandatory {
+	font-weight: bold;
+	color: #004380;
+}
+
+.helptext {
+	cursor: help;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: italic;
+	color: #009900;
+	margin-left: 5px;
+	width: 20px;
+	border: #004380 0px solid;
+}
+
+.helplabel {
+	display: block;
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 1.0em;
+	color: #006ddc;
+	margin-bottom :2px;
+}
+
+.helplabel:hover {
+	color: #866f3c;
+}
+
+.formrow div.forminput{
+	float: left;
+	text-align: left;
+	font-size: 1.0em;
+}
+
+.arrayfieldcell .formrow .forminput{
+	float: left;
+	width: auto;
+}
+
+.arrayfieldcell .formrow .formlabel{
+	display: none;
+}
+.infotext {
+	font-size: 1.0em;
+}
+.infotext_help {
+	display: block;
+	font-weight: normal;
+	font-size: 1.0em;
+	font-style: normal;
+	color: #004380;
+	background-color: white;
+	margin: 0;
+	width: 60%;
+}
+
+.infotext_help p {
+	display: block;
+	font-weight: normal;
+	font-size: 1.0em;
+	font-style: normal;
+	border: 1.0px solid #deceaa;
+	margin: 2px;
+	padding: 8px;
+}
+
+.errortext {
+	font-size: 1.0em;
+	font-weight: bold;
+	font-style: normal;
+	color: red;
+}
+
+.erroricon {
+	cursor: help;
+	margin-left: 10px;
+	width: 10px;
+	font-size: 1.0em;
+	font-weight: bold;
+	font-style: normal;
+	color: red;
+}
+
+.formrow textarea {
+	font-size: 1.0em;
+	width: 386px;
+}
+
+.grayed {
+	color: Gray;
+	font-size: smaller;
+}
+
+.arrayfield {
+	table-layout: fixed;
+	clear: left;
+	width: 90%;
+	margin-left: -3px;
+}
+
+.arrayfieldcell .formrow {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.arrayfield th .formlabel {
+	text-align: left;
+	font-weight: bold;
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.arrayfield caption, .multiplefieldlistlabel{
+	font-weight: bold;
+	text-align: left;
+}
+
+fieldset.multiplefield_inlist {
+	border:1px solid #76D0BD;
+	padding:5px;
+	margin-top:10px;
+}
+
+fieldset.multiplefield legend.formlabel {
+	width: auto;
+}
+
+fieldset.multiplefield_inlist legend.formlabel {
+	width: auto;
+}
+
+.multiplefield {
+	clear: both;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.multiplefield_inlist {
+	clear: both;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.swapfield {
+	float: left;
+	min-width: 200px
+}
+
+.swapbuttons {
+	display: block;
+	padding-top: 20px;
+	float: left;
+}
+
+input.multiplefieldlist {
+	margin-left: 6px;
+}
+
+.forminput .button, .normalbutton {
+	height: 21px;
+}
+
+.formrow .forminput .fileupload {
+	height: 21px;
+}
+
+.formbuttons {
+	margin-top: 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+.formbuttons .button {
+	float: right;
+	margin-right: 10.0px;
+}
+
+.forminput .button, .formbuttons .button, .arrayinsert, .searchbutton {
+	font-size: 1.0em;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.contentarea.border {
+	border: 1.0px solid;
+	border-color: #333366;
+	padding-left: 8px;
+	width: 730px;
+	height: 100%;
+	float: right;
+	background-color: #ECECF4;
+	overflow: auto;
+} /* content area voor tabbed weergaven */
+
+/* titles */
+.formtitle {
+	font-size: 1.1em;
+	font-weight: bold;
+	font-style: normal;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: left;
+	clear: left;
+}
+
+.tableeditortitle .icon {
+	float: right;
+}
+
+.previewtitle {
+	font-size: 1.0em;
+	font-weight: bold;
+	font-style: normal;
+	clear: both;
+	top: 0px;
+	padding-top: 5px;
+	position: relative;
+}
+
+.questiontitle {
+	font-style: normal;
+	clear: both;
+	top: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 8px;
+	position: relative;
+}
+
+h2.questiontitle {
+	background: url("../images/gold-gradient-hor.png") repeat-y;
+	color: white;
+	padding: 5px;
+	line-height: 16px;
+	margin-bottom: 5px;
+}
+
+h3.questiontitle {
+	color: #004380; /* politieblauw */
+	padding-top: 11px;
+	margin: 0;
+}
+
+.errortext, .row_left .errortext, .errormessage, .errortext, .digidcancel, .digiderror, .login_error {
+	vertical-align: top;
+	font-weight: bold; /*------- wijzigbaar -----*/
+	font-style: normal; /*------- wijzigbaar -----*/
+	color: red; /*------- wijzigbaar -----*/
+}
+
+/**************************************************************************
+	IDBC specific css
+***************************************************************************/
+div.questions td, .answerRow td {
+	vertical-align: top;
+	overflow: hidden;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #deceaa;
+}
+
+div.formrow textarea {
+	width: auto;
+}
+
+.idbcquestion {
+	width: 390px;
+}
+
+.idbcinput {
+	width: 260px;
+	padding-left: 10px;
+}
+
+.editcol {
+	width: 30px;
+	vertical-align: top;
+}
+
+.endheader {
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+.crimeclass {
+	padding-bottom: 5px;
+}
+
+.followupleft {
+	float: left;
+	width: 130px;
+}
+
+.followupright {
+	float: right;
+	width: 500px;
+}
+
+.catitem {
+	margin-left: 10px;
+}
+
+/*************************************************************
+ * Page 1 idbcmelding (table)
+ *************************************************************/
+#formtable {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.formfragment {
+	width: 180px;
+	border-left: 1px solid #866f3c;
+	background-color: #f2e6cb;
+	padding: 4px;
+}
+
+.formfragment_header {
+	width: 180px;
+	background-color: #f2e6cb;
+	padding: 4px;
+}
+
+.formfragment_top {
+	border-top: 1px solid #866f3c;
+}
+
+td.form_col1, td.form_col1 .formlabel {
+	width: 160px;
+}
+
+td.form_col2 {
+	width: 180px;
+}
+
+#formtable td {
+	padding: 4px;
+}
+
+#formtable fieldset {
+	border: none;
+}
+
+/*************************************************************
+ * Delict
+ *************************************************************/
+div.delicttabdata div {
+	border: 1px solid #deceaa;
+	padding: 5px;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+
+/*************************************************************
+ * flowcontainer eforms
+ *************************************************************/
+
+body.cookievraag #flowcontainer { top: 218px;}
+#flowcontainer {margin-top: 15px;}
+.flowcontainer .label {background-color: grey;}
+.flowcontainer .label.current {background-color: @theme-signal-color;}
+
+/*************************************************************
+ * formrow in panel
+ *************************************************************/
+#dialog .panel-body, #dialog .panel-footer {
+	padding: 0;
+}
+
+.panel-forms .panel-heading {
+	font-size: @font-size-h4;
+}
+.panel-forms {
+ .panel-variant(@panel-forms-border; @panel-forms-text; @panel-forms-heading-bg; @panel-forms-border);
+}
+
+#dialog .panel-forms div.formrow {
+	#gradient > .horizontal(white, @formrow-bg-color, 40%, 80%);
+	border: none;
+	border-top: 1px solid @formrow-border;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#dialog .panel-header {
+	background-color: @formrow-bg-color;
+	// #gradient > .horizontal(white, @formrow-bg-color, 40%, 80%);
+}

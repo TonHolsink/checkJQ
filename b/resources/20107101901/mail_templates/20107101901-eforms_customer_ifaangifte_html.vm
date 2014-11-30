@@ -1,0 +1,55 @@
+<html>
+<head>
+<style type="text/css">$css</style>
+</head>
+<body>
+<div id="header">
+<div id="header_body">
+<h1>UW AANGIFTE</h1>
+Ontvangstbevestiging
+</div> <!-- header_body -->
+</div> <!-- header -->
+<div id="main">
+<div id="content">
+Geachte mevrouw, heer,
+<p>
+Uw aangifte met nummer ($formnumber) is door ons goed ontvangen.<br/>
+Antwoorden op vragen over de voortgang/status van uw aangifte kunt u vinden onder de link informatie (hieronder te openen en te lezen). Mails over de voortang/status van uw aangifte zullen <b>niet</b> worden beantwoord. Zodra er informatie is over de aangifte wordt u via de mail door ons geinformeerd. Op andere wijze kunnen wij vanwege personele bezetting geen vragen beantwoorden. 
+</p>
+<p>
+Meer <a href="https://www.mijnpolitie.nl/mio/Info_aangifte_internetoplichting.pdf">informatie</a> over uw aangifte bij 
+het Landelijk Meldpunt Internet Oplichting.</li>
+</p>
+<p>
+De Nationale Politie, het Openbaar Ministerie en de Banken zijn met ingang van 1 oktober 2014 een samenwerkingsovereenkomst aangegaan. Dit betekent dat de bank voortaan via het Landelijk Meldpunt Internet Oplichting (LMIO) informatie ontvangt van bankrekeningen die op enerlei wijze frauduleus worden gebruikt. U behoeft daarom zelf geen melding meer te doen bij de bank. 
+</p>
+<p>
+Wij hopen u van dienst te zijn,
+</p>
+<p>Met vriendelijke groet,<br/>
+Politie Kennemerland</p>
+<p>Deze mail is automatisch aangemaakt.</p>
+<div id="disclaimer">
+<h1>DISCLAIMER</h1>
+De informatie verzonden met dit emailbericht is uitsluitend bestemd voor
+de geadresseerde. Indien dit emailbericht niet aan u is gericht, dan wel
+abusievelijk aan u verstuurd is, verzoeken wij u het emailbericht te
+retourneren aan de verzender en het origineel en eventuele kopieen te
+verwijderen en te vernietigen.
+Gebruik van deze informatie door anderen dan de geadresseerde,
+openbaarmaking, vermenigvuldiging, verspreiding en/of verstrekking van
+deze informatie aan derden is niet toegestaan zonder goedkeuring van de
+afzender en valt buiten de verantwoordelijkheid en aansprakelijkheid van
+het Landelijk Meldpunt Internetoplichting (LMIO). Het LMIO acht
+zich niet gebonden aan contracten of bestellingen die middels een
+emailbericht zijn verzonden.
+</div>
+</div> <!-- content -->
+<div id="footer">
+<div id="footer-left"><img src="cid:waakzaam" height="20px"></div>
+<div id="footer-right"><img src="cid:politie" height="60px"></div>
+</div> <!-- footer -->
+</div> <!-- main -->
+</body>
+</html>
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+	<form id="theForm" class="   hallo   ton   holsink   ">
+		<input type='text' value="1">
+		<input type='text' value="5">
+	</form>
+
+
+		<!-- <script type="text/javascript" src="../resources/scripts/prototype.js"></script> -->
+		<script type="text/javascript" src="../resources/scripts/jquery.min.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+
+
+
+
+(function() {
+	var $break = { };
+
+	function all(coll, iterator, context) {
+		var result = true;
+		jQuery.each(coll, function(index, el) {
+			console.log(context, index, el, this);
+			result = result && !!iterator.call(context, el, index, this);
+			if (!result) return false;
+		});
+		return result;
+	};
+
+	function any(coll, iterator, context) {
+		var result = false;
+		jQuery.each(coll, function(index, el) {
+			console.log(context, index, el, this);
+			if (result = !!iterator.call(context, el, index, this)) return false;
+		});
+		return result;
+	};
+
+	function collect(coll, iterator, context) {
+		var results = [];
+		jQuery.each(coll, function(index, el) {
+			results.push(iterator.call(context, el, index, this));
+		});
+		return results;
+	};
+
+	function findAll(coll, iterator, context) {
+		var results = [];
+		jQuery.each(coll, function(index, el) {
+			if (iterator.call(context, el, index, this))
+				results.push(el);
+		});
+		return results;
+	};
+
+	function camelize(str) {
+		return str.replace(/-+(.)?/g, function(match, chr) {
+			return chr ? chr.toUpperCase() : '';
+		});
+	};
+
+	function classNames($el) {
+		var result = $.trim($el.attr('class')).split(/\s+/);
+		if (result[0].length == 0) {
+			return [];
+		}
+		return result;
+	};
+
+	$(function() {
+		// var A = [5,4,3,2,1];
+
+		// var result = all(A, function(n) {
+		// 	return n <= 7;
+		// });
+
+		// console.log(result);
+
+		// var A = $('input');
+
+		// var result = all(A, function(el) {
+		// 	return $(el).val() < 4;
+		// });
+
+		// console.log(result);
+
+		// var A = [5,4,3,2,1];
+
+		// var result = any(A, function(n) {
+		// 	return n <= 0;
+		// });
+
+		// console.log(result);
+
+		// var A = $('input');
+
+		// var result = any(A, function(el) {
+		// 	return $(el).val() < 4;
+		// });
+
+		// console.log(result);
+
+		// var form = $('#theForm');
+		// console.log((form).find(':input'));
+
+		// var A = collect(['Hitch', "Hiker's", 'Guide', 'to', 'the', 'Galaxy'], function(s) {
+		// 	return s.charAt(0).toUpperCase();
+		// });
+
+		// console.log(A);
+
+		// var A = collect([1,2,3,4,5], function(n) {
+		// 	return n * n;
+		// });
+
+		// console.log(A);
+
+		// var A = findAll([1, 'two', 3, 'four', 5], jQuery.isNumeric);
+
+		// console.log(A);
+
+		var A = camelize('form-control');
+
+		console.log(A);
+
+		// var A = classNames($('#theForm'));
+		// console.log(A);
+
+	});
+
+})();
+
+// ]]>
+
+
+</script>
+
+
+	</body>
+</html>

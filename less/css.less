@@ -1,0 +1,169 @@
+/*************************************************************
+ * general
+ *************************************************************/
+table {border-collapse: collapse;}
+table.fixed {table-layout: fixed;}
+table.emptyRow td{padding-bottom: 1em;}
+th, caption {
+	text-align: left;
+	color: #FFFFFF;
+}
+caption {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+td {vertical-align: top;}
+.center {text-align: center;}
+.float_left {float: left;}
+.float_right {float: right;}
+.clear {clear: both; font-size: 0; line-height: 0; min-height: 0; height: auto !important; height: 0;}
+.smaller {font-size: smaller;}
+.marginTop {margin-top: 1em;}
+.marginBottom {margin-bottom: 1em;}
+.marginTopBottom {margin-top: 1em; margin-bottom: 1em;}
+.hidden {display: none;}
+.pointer {cursor: pointer;}
+.default {cursor: default;}
+.under {text-decoration:underline;}
+.raquo {color: #866f3c;}
+
+a:hover .raquo {color: red;}
+img.float_left {
+	margin: 0 10px 0 0;
+	padding-top: 3px;
+}
+img.float_right {
+	margin: 0 0 0 10px;
+	padding-top: 3px;
+}
+.ietje {
+	.text-emphasis-variant(@state-info-text);
+	cursor: help;
+}
+.helphover{cursor: help;}
+/*************************************************************
+ * meldingen
+ *************************************************************/
+#messageBlock {
+	// margin-top: 0;
+	margin-left: 130px;
+	margin-right: 20px;
+}
+div#messageBlock div.message, div#messageBlock div.error  {
+	line-height: 28px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+div#messageBlock div.message {background: url("../images/blue-gradient-hor.png") repeat-y;}
+div#messageBlock div.error{
+	background: url("../images/red-gradient-hor.png") repeat-y;
+	color: white;
+}
+.alert {
+	border: 1px solid red;
+	padding: 5px;
+	margin-top: 10px;
+}
+.popupMsg {
+	display: none;
+	position: absolute;
+	z-index: 20;
+	border: 2px solid #004380;
+	background: white;
+	padding: 3px;
+	width: 350px;
+	min-height: 100px;
+	height: auto !important;
+	_height: 100px;
+	top: 220px;
+	left: 142px;
+}
+.popupMsgHeader {
+	height: 22px;
+	background-color: #004380;
+	padding: 0 4px;
+}
+.popupMsgTitle {
+	font-weight: bold;
+	color: #FFF;
+	line-height: 20px;
+	float: left;
+}
+.popupMsgContent {
+	padding: 1em;
+}
+div#close, div.close {
+	float: right;
+	width: 16px;
+	height: 16px;
+	display: block;
+	background: url("../images/close.png");
+	cursor: pointer;
+	margin-top: 3px;
+}
+#messageBlock {height: 20px;}
+/*************************************************************
+ * menu
+ *************************************************************/
+#topMenu {
+	padding-right: 20px;
+	text-align: right;
+	padding-top: 12px;
+}
+.menu {
+	background-color: white;
+	position: absolute;
+	display: none;
+	z-index: 5;
+	width: 140px;
+	text-align: left;
+	_top: 84px; /* ie6 hack */
+}
+div#topMenu ul {
+	padding: 0;
+	margin: 0;
+}
+div#topMenu ul li {
+	height: 18px;
+	display: inline;
+	padding-left: 16px;
+	background: url('../images/dot-gold.jpg') 4px no-repeat;
+}
+div#topMenu ul li:first-child {
+	padding-left: 0px;
+	background: none;
+}
+div#topMenu ul.menu li {
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	background: none;
+	height: 22px;
+	line-height: 22px;
+}
+/*************************************************************
+ * Cookies
+ *************************************************************/
+#Cookies_question{ clear: both; background-color: #f2e6cb; }
+#Cookies_question .story, #Cookies_status .text, #Cookies_question .cookie_forms, #Cookies_question .cookie_forms .cookies_buttons { display: inline; }
+#Cookies_status .story, #Cookies_status .cookie_forms, #Cookies_status .cookie_forms .cookies_buttons { display: inline; }
+#Cookies_question,#Cookies_status{font-size:1em; margin-left: 20px;}
+#Cookies_question{height:24px;padding-top:6px;width:960px;text-align:center;}
+#Cookies_question .story,#Cookies_status .story{padding-top:10px!important;}
+#Cookies_question .cookie_forms span.cookies_button,#Cookies_status .cookie_forms span.cookies_button{border:1px solid #aeaeae;background:url(../images/button_bg.gif);margin:0 0 0 1em;cursor:pointer;font-size:1em;padding:0px 4px;}
+#Cookies_question .cookie_forms span.btn_allow_true,#Cookies_status .cookie_forms span.btn_allow_true{border-color:#33cc33;}
+#Cookies_question .cookie_forms span.btn_allow_false,#Cookies_status .cookie_forms span.btn_allow_false{border-color:#ff6666;}
+/*************************************************************
+ * SERVICES ALGEMEEN
+ *************************************************************/
+/**********************************************************************
+ * MIO
+/**********************************************************************/
+.mioAlert {background: transparent url('../images/double_exclamation_mark_red.png') no-repeat right;}
+.mioForeignIBANAlert {background: transparent url('../images/exclamation_mark_orange.png') no-repeat right;}
+.mioOk {background: transparent url('../images/tick_gold.png') no-repeat right;}
+.mioBlank {background: none;}
+#miopreventionFormDiv{
+	min-height: 153px;
+	height: auto;
+}

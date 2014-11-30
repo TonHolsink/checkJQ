@@ -1,0 +1,38 @@
+<html>
+<head>
+<style type="text/css">$css</style>
+</head>
+<body>
+<div id="header">
+<div id="header_body">
+<h1>Melding</h1>
+Internetoplichting
+</div> <!-- header_body -->
+</div> <!-- header -->
+<div id="main">
+<div id="content">
+Geachte heer, mevrouw,
+<p>Betreft: aangifte van internetoplichting $orderNumber</p>
+<p>De politie heeft op $orderDate een aangifte van mogelijke internetoplichting
+ontvangen, waarbij uw e-mailadres wordt genoemd. Wij sturen u hierbij een
+automatisch gegenereerde e-mail waarin u hiervan op de hoogte wordt gesteld.<br/>
+Het e-mailadres van de aangever is: <a href="mailto:$emailDeclarant?subject=Aangifte internetoplichting">$emailDeclarant</a>.</p>
+<p>Deze aangifte kan voor het Meldpunt Internetoplichting aanleiding zijn om een
+strafrechtelijk onderzoek te starten, zeker wanneer wij meerdere aangiftes ontvangen.</p>
+<p>Het is echter ook mogelijk dat de aangever het gevoel heeft opgelicht te zijn,
+terwijl dit in strafrechtelijke zin niet het geval is. U krijgt hierbij de gelegenheid een
+eventueel (civiel) conflict op te lossen door contact op te nemen met de aangever.
+Als het conflict wordt opgelost, kan de aangever de aangifte op de site van <a href="http://www.mijnpolitie.nl">www.mijnpolitie.nl</a>
+intrekken door in te loggen met Digi-D. Mocht de aangever niet in staat zijn deze in te trekken
+dan kan deze een e-mail sturen naar meldpuntinternetfraude@kennemerland.politie.nl,
+wij zullen de aangifte dan namens de aangever intrekken.</p>
+<p>Mvg,</p>
+<p>Het Landelijk Meldpunt Internetoplichting van de politie</p>
+</div> <!-- content -->
+<div id="footer">
+<div id="footer-left"><img src="cid:waakzaam" height="20px"></div>
+<div id="footer-right"><img src="cid:politie" height="60px"></div>
+</div> <!-- footer -->
+</div> <!-- main -->
+</body>
+</html>

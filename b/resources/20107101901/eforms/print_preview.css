@@ -1,0 +1,330 @@
+@CHARSET "ISO-8859-1";
+
+body {	
+	padding-bottom : 30px;
+}
+
+ul {
+    margin-top : 0px;
+	margin-left : -19pt;
+	height : 1%;
+}
+
+li {
+	height : 1%;
+}
+
+div {
+	height : 1%;
+}
+
+* html ul {
+  margin-left : 0;
+  padding-left : 19px;
+}
+
+* html ul li {
+	height : auto;
+}
+
+legend {
+	color : black !important;
+}
+.hidden {
+	display: none;
+}
+
+legend.formlabel {
+	padding-top : 3px;
+	font-weight : bold;
+	margin-left : 0;
+	padding-left : 0;
+}
+
+* html legend.formlabel {
+	margin-left : -3px;
+}	
+
+.title {
+     display : block;
+	position: relative;
+	top: 15px;
+	left: 0px;
+	font-family: sans-serif;
+	color : #1e2171; 
+	font-size: 19pt; 
+	font-weight: bold; 
+	font-style: normal;
+}
+
+.userinfo {
+	display : none;
+}
+
+ul.header_menu {
+	display : none;
+}
+
+ul.header_menu .menutitle {
+	display: none;
+}
+
+ul.header_menu li.menuitem {
+	display : none;
+}
+
+ul.header_menu a {
+	display : none;
+}
+
+ul.header_menu a:hover,ul.header_menu li.menuitem.active a {
+	display : none;
+}
+
+#quicksearch form {
+	display : none;
+}
+
+#quicksearch fieldset {
+	display : none;
+}
+
+.searchbutton {
+	display : none;
+}
+
+/* Forms */
+.formrow {
+	clear: both;
+	padding-top: 1px;
+}
+
+.formrow .formlabel {
+	display : block;
+    float : left;
+    clear : left;    
+	width: 4.7cm;
+	padding-right : 10px;
+	font-family: sans-serif;
+	font-size: 9pt; 
+	font-weight: normal; 
+	font-style: normal;
+	text-align: left;
+}
+
+.mandatory {
+	display : none;
+}
+
+.helptext {
+	display : none;
+}
+
+.helplabel {
+   display : none;
+}
+
+div.formrow div.forminput {
+        display : block;
+        float : left;
+        width : 10cm;
+	font-family: sans-serif;
+	font-size: 9pt;
+}
+
+.infotext {
+	font-family: sans-serif;
+	font-size: 9pt;
+	border : 1px solid white;
+}
+
+.formrow textarea {
+        width : 90%;
+	font-family: sans-serif;
+	font-size: 9pt;
+}
+
+
+.arrayfield {
+	table-layout: fixed;
+	 clear : left;
+	 border-collapse: collapse;
+	 border : none;
+}
+
+
+.arrayfieldcell .formrow {
+	float: left;
+}
+
+.arrayfieldcell .formrow div.forminput {
+    width : auto;
+} 
+
+.arrayfieldcell .formrow .formlabel {
+    display : none;
+}
+.arrayfield td {
+	border : 1px solid black;
+}
+.arrayfield th {
+	border : 1px solid black;
+	text-align: left;
+}
+
+.arrayfield th .formlabel {
+ font-weight: bold;
+}
+
+.arrayfield caption {
+	font-weight: bold;
+	text-align: left;
+}
+
+table.arrayfield tr td.deletecolumn, table.arrayfield tr th.deletecolumn{
+	border : none;
+}
+
+fieldset.multiplefield_inlist  {
+	clear : both;
+}
+
+fieldset.multiplefield legend.formlabel {
+	width : auto;
+}	
+
+fieldset.multiplefield_inlist legend.formlabel {
+	width : auto;
+}	
+
+.multiplefield {
+	clear: both;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.swapfield {
+	float: left;
+	min-width: 200px
+}
+
+.swapbuttons {
+	display: block;
+	padding-top: 20px;
+	float: left;
+}
+
+.arrayfield div.formrow div.forminput {
+        padding-left : 0;
+}
+
+/* titles */
+.inboxtitle, .reporttitle, .tableeditortitle, .errortitle, .tabcontenttitle  {
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: left;
+	clear : left;
+}
+
+.formtitle {
+	font-family: sans-serif;
+	color : #1e2171; 
+	font-size: 12pt; 
+	font-weight: bold; 
+	font-style: normal;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: left;
+	clear : left;
+}
+
+.tableeditortitle .icon {
+	float : right;
+}
+
+.datafoldertitle  {
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: left;
+}
+
+.questiontitle, .previewtitle {
+	 display : block;
+     padding-top : 10px;
+	 font-family: sans-serif;
+     clear : both;
+	 font-size: 10pt; 
+	 font-weight: bold; 
+	 font-style: normal;
+	 border : 1px solid white;
+}
+
+
+/*Menu's en tabs */
+#menus {
+	display : none;
+}
+
+ul.main_menu .menutitle,ul.tasks .menutitle,ul.questions .menutitle {
+	display : none;
+}
+
+ul.main_menu,ul.tasks,ul.questions {
+	display : none;
+}
+
+ul.main_menu a,ul.tasks a,ul.questions a, ul.main_menu span, ul.tasks span, ul.questions span {
+	display : none;
+}
+
+ul.main_menu a:hover,ul.tasks a:hover,ul.questions a:hover {
+	display : none;
+}
+
+ul.main_menu li.active a, ul.tasks li.active a, ul.questions li.active a {
+	display : none;
+}
+
+ul.questions li.saved a {
+	display : none;
+}
+
+ul.tabs {
+	display : none;
+}
+
+ul.tabs .menutitle {
+	display : none;
+}
+
+ul.tabs .menuitem {
+	display : none;
+}
+
+ul.tabs .menuitem a, ul.tabs .menuitem span {
+	display : none;
+}
+
+ul.tabs .menuitem a:hover {
+	text-decoration: underline;
+}
+
+ul.tabs li.menuitem.active {
+	background-color: #bbbbbb;
+}
+
+* html .signature {
+	height : 0px;
+}
+
+/*.signature input {
+	float : left;
+}*/
+

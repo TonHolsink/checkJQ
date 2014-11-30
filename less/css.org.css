@@ -1,0 +1,495 @@
+/*************************************************************
+ * page
+ *************************************************************/
+.PageWrapper {position: relative; margin: 0 auto; width: 960px; min-height: 665px; height: auto !important; height: 665px;}
+/* Standard Content Page */
+.StandardPage {
+	padding: 50px 20px 0 20px;
+	width: auto;
+	min-height: 392px;
+	height: auto !important;
+	height: 392px;
+}
+
+.PageHeader {
+	width: 960px;
+	min-height: 64px;
+	height: auto !important;
+	height: 64px;
+}
+
+.PageHeaderLogo {z-index: 1; position: absolute; left: 20px; top: 0;}
+
+body.cookievraag .PageHeader { top: 32px;}
+body.cookievraag .PageHeaderLogo { top: 32px;}
+body.cookievraag .PageBanner { top: 96px;}
+body.cookievraag .popupMsg { top: 250px;}
+
+.PageContentWrapper{ height: auto;}
+.DefaultPage .PageContentWrapper .PageContentColumn1 {min-height: 457px; height: auto !important; height: 457px;}
+.DefaultPage .PageContentWrapper .PageContentColumn1 {padding: 0 10px 0 16px; width: 900px;}
+
+.PageFooter { position: relative; width: 100%; min-height: 20px; height: auto !important; height: 20px; margin-top: 11px;}
+.PageFooterContent { margin: 0 auto; position: relative; width: 960px; min-height: 20px; height: auto !important; height: 20px; text-align: right;}
+
+/*************************************************************
+ * general
+ *************************************************************/
+body, h1, h2, h3, h4, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: verdana,sans-serif;
+	font-size: 12px;
+	color: black;
+	line-height: 17px;
+	background-color: #FFF;
+}
+.inactive, .inactive a {color: #808080;}
+a, .asLink {
+	outline: 0;
+	text-decoration: none;
+	color: #006ddc;
+}
+.asLink {cursor: pointer;}
+a img {border: 0;}
+a:hover, .asLink:hover, .bullet:hover {color: #866f3c;}
+ul {
+	list-style-position: outside;
+	padding-left: 16px;
+}
+ol.outside {
+	list-style-position: outside;
+	padding-left: 20px;
+}
+table {border-collapse: collapse;}
+table.fixed {table-layout: fixed;}
+table.emptyRow td{padding-bottom: 1em;}
+th, caption {
+	text-align: left;
+	color: #FFFFFF;
+}
+caption {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+td {vertical-align: top;}
+.center {text-align: center;}
+.float_left {float: left;}
+.float_right {float: right;}
+.clear {clear: both; font-size: 0; line-height: 0; min-height: 0; height: auto !important; height: 0;}
+.smaller {font-size: smaller;}
+.marginTop {margin-top: 1em;}
+.marginBottom {margin-bottom: 1em;}
+.marginTopBottom {margin-top: 1em; margin-bottom: 1em;}
+.hidden {display: none;}
+.pointer {cursor: pointer;}
+.default {cursor: default;}
+.under {text-decoration:underline;}
+h1, #pageTitle, h3{
+	color: #866f3c; /* Politiegoud */
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 12px;
+	margin-top: 8px;
+}
+h2, h4, .blocktitle, .contentHeader, .summaryHeader {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 8px;
+}
+h2, .blocktitle, .contentHeader, .summaryHeader {color: #004380;} /* politieblauw */
+.with-line, #pageTitle, h1.title {border-bottom: 1px solid #deceaa;}
+h1.with-line, #pageTitle, h1.title{
+	margin-left: -16px;
+	padding-left: 16px;
+}
+.raquo {color: #866f3c;}
+a:hover .raquo {color: red;}
+img.float_left {
+	margin: 0 10px 0 0;
+	padding-top: 3px;
+}
+img.float_right {
+	margin: 0 0 0 10px;
+	padding-top: 3px;
+}
+.helptext, .ietje {
+	cursor: help;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-style: italic;
+	color: #009900;
+	margin-left: 5px;
+	width: 20px;
+	border: #333366 0px solid;
+}
+.helphover{cursor: help;}
+/*************************************************************
+ * meldingen
+ *************************************************************/
+#messageBlock {
+	margin-top: 24px;
+	margin-left: 90px;
+	margin-right: 20px;
+}
+div#messageBlock div.message, div#messageBlock div.error  {
+	line-height: 28px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+div#messageBlock div.message {background: url("../images/blue-gradient-hor.png") repeat-y;}
+div#messageBlock div.error{
+	background: url("../images/red-gradient-hor.png") repeat-y;
+	color: white;
+}
+.alert {
+	border: 1px solid red;
+	padding: 5px;
+	margin-top: 10px;
+}
+.popupMsg {
+	display: none;
+	position: absolute;
+	z-index: 20;
+	border: 2px solid #004380;
+	background: white;
+	padding: 3px;
+	width: 350px;
+	min-height: 100px;
+	height: auto !important;
+	_height: 100px;
+	top: 220px;
+	left: 142px;
+}
+.popupMsgHeader {
+	height: 22px;
+	background-color: #004380;
+	padding: 0 4px;
+}
+.popupMsgTitle {
+	font-weight: bold;
+	color: #FFF;
+	line-height: 20px;
+	float: left;
+}
+.popupMsgContent {
+	padding: 1em;
+}
+div#close, div.close {
+	float: right;
+	width: 16px;
+	height: 16px;
+	display: block;
+	background: url("../images/close.png");
+	cursor: pointer;
+	margin-top: 3px;
+}
+#statusDetails {padding: 25px 10px;}
+#messageBlock {height: 20px;}
+/*************************************************************
+ * kruimelpad
+ *************************************************************/
+#breadcrumb{
+	margin-top: -22px;
+	margin-left: -16px;
+	min-height: 22px;
+	height: auto !important;
+	height: 22px;
+}
+#breadcrumb a {color: #004380;}
+#breadcrumb a:hover {color: #006ddc;}
+#breadcrumb .raquo, #breadcrumb a:hover .raquo {color: #004380;}
+/*************************************************************
+ * menu
+ *************************************************************/
+#topMenu {
+	padding-right: 20px;
+	text-align: right;
+	padding-top: 12px;
+}
+.menu {
+	background-color: white;
+	position: absolute;
+	display: none;
+	z-index: 5;
+	width: 140px;
+	text-align: left;
+	_top: 84px; /* ie6 hack */
+}
+div#topMenu a {
+	text-decoration: none;
+	color: #004380;
+}
+div#topMenu a:visited {color: #004380;}
+div#topMenu a:hover {color: #006ddc;} /* licht blauw */
+div#topMenu ul {
+	padding: 0;
+	margin: 0;
+}
+div#topMenu ul li {
+	height: 18px;
+	display: inline;
+	padding-left: 16px;
+	background: url('../images/dot-gold.jpg') 4px no-repeat;
+}
+div#topMenu ul li:first-child {
+	padding-left: 0px;
+	background: none;
+}
+div#topMenu ul.menu li {
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	background: none;
+	height: 22px;
+	line-height: 22px;
+}
+div#topMenu ul.menu li a{
+	display: block;
+	margin: 0;
+	height: 100%;
+	padding: 0 0 0 16px;
+}
+div#topMenu ul.menu li a:hover{
+	background-color: #006ddc;
+	color: white;
+}
+div#topMenu div.een_menu {margin-top: 33px;}
+/*************************************************************
+ * rechterkolom: nl map nieuwsbrief informatiebrief vraag
+ *************************************************************/
+#nlmap {
+	border-top: 1px solid #deceaa;
+	margin-left: -16px;
+	margin-top: 10px;
+	padding-left: 16px;
+}
+#nlmap img {
+	width: 160px;
+	padding-top: 10px;
+}
+/*************************************************************
+ * navigation buttons (horizontal)
+ *************************************************************/
+a.button_link {
+	display: block;
+	margin: 0;
+	height: 100%;
+}
+/*************************************************************
+ * Cookies
+ *************************************************************/
+#Cookies_question{ clear: both; background-color: #f2e6cb; }
+#Cookies_question .story, #Cookies_status .text, #Cookies_question .cookie_forms, #Cookies_question .cookie_forms .cookies_buttons { display: inline; }
+#Cookies_status .story, #Cookies_status .cookie_forms, #Cookies_status .cookie_forms .cookies_buttons { display: inline; }
+#Cookies_question,#Cookies_status{font-size:1em; margin-left: 20px;}
+#Cookies_question{height:24px;padding-top:6px;width:960px;text-align:center;}
+#Cookies_question .story,#Cookies_status .story{padding-top:10px!important;}
+#Cookies_question a,#Cookies_status a{color:#0066cc;text-decoration:none;}
+#Cookies_question a:hover,#Cookies_status a:hover{text-decoration:underline;}
+#Cookies_question .cookie_forms span.cookies_button,#Cookies_status .cookie_forms span.cookies_button{border:1px solid #aeaeae;background:url(../images/button_bg.gif);margin:0 0 0 1em;cursor:pointer;font-size:1em;padding:0px 4px;}
+#Cookies_question .cookie_forms span.btn_allow_true,#Cookies_status .cookie_forms span.btn_allow_true{border-color:#33cc33;}
+#Cookies_question .cookie_forms span.btn_allow_false,#Cookies_status .cookie_forms span.btn_allow_false{border-color:#ff6666;}
+/*************************************************************
+ * Q & A
+ *************************************************************/
+div.q_and_a {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+div#helpTable .col1, div#helpTable .col2 {float: left;}
+div#helpTable .col1 {
+	width: 100px;
+	font-weight: bold;
+}
+div#helpTable .col2 {width: 506px;}
+div#helpTable  div.question div.col2 {
+	color: #004380; /* politieblauw */
+	font-weight: bold;
+}
+/*************************************************************
+ * SERVICES ALGEMEEN
+ *************************************************************/
+#wideItemDetailTable .col1{width: 150px;}
+#wideItemDetailTable .col2{width: 500px;}
+.serviceTable table {
+	width: 100%;
+}
+.serviceTable td, .serviceTable th{
+	overflow: hidden;
+	border: 1px solid white;
+}
+.serviceTable th, .serviceTable caption {
+	background-color: #004380; /* politieblauw */
+	padding: 4px;
+	font-weight: bold;
+}
+.serviceTable td {
+	background-color: #f2e6cb;
+	padding: 4px;
+}
+/* soms repareren van achtergrond */
+.no_background td, table.no_background tr, table.no_background th, table.no_background td {background: none;}
+.serviceTable th a {color: #FFFFFF;}
+.serviceTable th a:hover {color: #866f3c;}
+.hiliteRow, .hiliteRow  td{
+	color: #866f3c;
+	background-color: #E4E4E4;
+	cursor: pointer;
+}
+.hiliteRow a {
+	color: #866f3c;
+	text-decoration:none;
+	display: block;
+	margin: 0;
+}
+.serviceTable .number {width: 90px;}
+.serviceTable .date {width: 100px;}
+#number {width: 90px;}
+#date {width: 80px;}
+#time {width: 40px;}
+.text {
+	width: 150px;
+	overflow: hidden;
+}
+#itemDetailTable {
+	min-height: 280px;
+	height: auto !important;
+	_height: 320px;
+}
+.col1 {width: 120px;}
+#bvsDetailsTable .col1 {width: 120px;}
+#bvsDetailsTable .col2 {width: 160px;}
+/*************************************************************
+ * AVS
+ *************************************************************/
+div#avsTable th#number {width: 124px;}
+div#avsTable .customernumber {width: 100px;}
+div#avsTable .text {width: 120px;}
+div#avsTable th#date {width: 75px;}
+div#avsTable .freetexta {display: none;}
+div#avsTable .actions {width: 40px;}
+#statusTable .col1, #itemDetailTable .col1 {width: 120px;}
+#bvsStatusTable input {width: 370px;}
+#bvsStatusTable .col2 {width: 400px;}
+/*************************************************************
+ * BVS
+ *************************************************************/
+#itemDocuments {
+	min-height: 200px;
+	_height: 200px;
+}
+#documentListTable .docTable_col1 {width: 125px;}
+#documentListGroupTitle {
+	font-weight: bold;
+	color: #004380;
+	height: 17px;
+	padding-top: 5px;
+}
+#bvsTable .number {width: 90px;}
+#bvsTable th#customernumber {width: 100px;}
+#bvsTable th#date {width: 75px;}
+#bvsTable th#time {width: 40px;}
+#bvsTable th#place {width: 280px;}
+#bvsTable th#plate {width: 70px;}
+input.time {width: 2em;}
+/**********************************************************************
+ * MVS
+/**********************************************************************/
+#mvsTable div.text {width: 250px;}
+#mvsTable {
+	min-height: 85px;
+	height: auto !important;
+	height: 85px;
+}
+/**********************************************************************
+ * MIO
+/**********************************************************************/
+.mioAlert {background: transparent url('../images/double_exclamation_mark_red.png') no-repeat right;}
+.mioForeignIBANAlert {background: transparent url('../images/exclamation_mark_orange.png') no-repeat right;}
+.mioOk {background: transparent url('../images/tick_gold.png') no-repeat right;}
+.mioBlank {background: none;}
+#miopreventionFormDiv{
+	border: 1px #deceaa solid;
+	padding: 2em; padding-bottom: 1em;
+	min-height: 153px;
+	height: auto;
+}
+/**********************************************************************
+ * Profiel
+/**********************************************************************/
+#customerDetails .col1 {width: 200px;}
+#customerInformation {margin-bottom: 20px;}
+#bottomNav {margin-top: 10px;}
+#emailinput {width: 250px;}
+/*************************************************************
+ * Tabs
+ *************************************************************/
+div.tabs {
+	height: 18px;
+	font-size: 11px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #004380;
+}
+.tabs ul {
+	list-style: none;
+	margin: 0;
+}
+.tabs li {
+	float: left;
+	list-style-type: none;
+	margin-left: 2px;
+}
+.tabs li a {
+	display: block;
+	width: 83px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+}
+.tabs li.tabselected a{color: white;}
+.tabs li a:hover {color: white;}
+.tabs .tabnotselected {
+	color: black;
+	border: 1px solid #004380;
+	border-bottom: 0px;
+}
+.tabs .tabselected {
+	color: white;
+	background-color: #866f3c;
+}
+.tabs .tabselected a:hover {background-color: #deceaa;}
+.tabs .tabnotselected a:hover {
+	background-color: #004380;
+	text-decoration: none;
+	color: white;
+}
+/**********************************************************************
+ * Laatste
+/**********************************************************************/
+a.morelink {color: #006ddc;}
+a:hover.morelink {color: #866f3c;}
+div.error a.morelink {color: white;}
+div.error a:hover.morelink {color: #006ddc;}
+/**********************************************************************
+ * Document tree
+/**********************************************************************/
+ul.tree { padding-left: 0; margin-left: -15px;}
+ul.tree li { cursor: pointer; list-style: none; }
+ul.tree ul, ul.tree li { margin-left:10px; padding:0px; }
+ul.tree li .bullet { padding-left: 20px; }
+ul.tree li.liOpen .bullet { cursor: pointer; background: url("../images/minus.gif") center left no-repeat; }
+ul.tree li.liClosed .bullet { cursor: pointer; background: url("../images/plus.gif") center left no-repeat; }
+/*************************************************************
+ * Poll
+*************************************************************/
+div#poll ul {
+	list-style-type: none;	/* zonder bullits */
+	padding-left: 0px;
+}
+div#poll {padding-bottom: 0;}

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- HTTP 1.1 -->
+		<title>FraudeNet</title>
+		<link rel="stylesheet" type="text/css" media="all" href="resources/styles/style.css" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="PageWrapper DefaultPage">
+			<a class="PageHeaderLogo" href="/index.shtml"><img src="resources/images/fraudnet-logo.png" /></a>
+			<div class="PageContentWrapper">
+				<div class="PageHeader">
+					<div id="topMenu">
+						<div class="top">
+							<ul class="menuList">
+								<li class="menubar"><a href="#" title="Informatie">Informatie</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="messageBlock">
+						<!-- div class="error">Hallo allemaal</div -->
+					</div>
+				</div> <!-- PageHeader -->
+				<div id="PageContent" class="PageContent">
+					<div class="StandardPage">
+						<div class="PageContentColumn1">
+							<h1 id="pageTitle">Internetoplichting</h1>
+							<div id="mioprevention">
+								<h2>Check (ver)koper</h2>
+								Voordat u een transactie met elkaar aangaat via een handelssite of
+								webshop, kunt u hier controleren of er meldingen over deze (ver)koper
+								zijn gedaan.
+								<div id="miopreventionFormDiv" class="panel panel-default marginTop">
+									<div class="panel-body bg-info">
+										<form id="miopreventionForm" role="form" class="form-inline" method="post" action="/b/miocheck2.html" onsubmit="return false">
+											<div>
+												<select name="checkCategory" class="form-control" onkeypress="return entsub(event);" id="checkCategory">
+													<option value="">Kies categorie</option>
+													<option value="2">Categorie_1</option>
+													<option value="3">Categorie_2</option>
+												</select>
+												<i class="fa fa-info-circle ietje" title="Dit veld is niet verplicht, maar helpt ons bij het onderzoek naar internetoplichting."></i>
+											</div>
+											<div class="marginTop">
+												<label>Controleer op</label> <input type="text"  class="form-control" size="40" maxlength="40" id="sTerm" onkeyup="return entsub(this)" name="searchTerm"/>
+											</div>
+											<div class="marginTop">
+												<strong>Toon aan dat u een persoon bent, bereken: </strong><span id="mioCalculation">3 + 2</span> = <input type="text"  class="form-control" size="5" maxlength="5" id="result" onkeyup="return entsub(this)" name="result"/>
+											</div>
+											<div class="marginTop">
+												<button class="btn btn-primary" onclick="javascript:checkOrNot()">controleer</button>
+											</div>
+											<div id="mioPreventionResult" class="marginTop"></div>
+										</form>
+									</div>
+								</div>
+								<div id='preventionHelp'>
+									<h2>Waarop kunt u controleren?</h2>
+									U kunt zoeken op de volgende gegevens:
+									<ul class="marginTop">
+										<li>Nederlands bankrekeningnummer (gebruik alleen cijfers, bijv. 123456789)</li>
+										<li>IBAN-nummer (gebruik alleen letters en cijfers, bijv. NL05123412341234123400)</li>
+										<li>E-mailadres (niet van toepassing voor Marktplaats adressen, deze zijn al door Marktplaats geblokkeerd - <a class="textlink targetblank" href="http://www.marktplaats.nl/i/help/faq.dot?articleNumber=000005006" target="_blank">lees meer</a>)</li>
+										<li>Telefoonnummer (gebruik alleen cijfers, bijv. 0201234567)</li>
+										<li>URL van een webwinkel (bijv. www.eenwinkel.nl)</li>
+									</ul>
+								</div>
+								<h2>Disclaimer</h2>
+								Deze check is slechts een hulpmiddel. U kunt hier geen rechten aan ontlenen.<br/>
+								<a href="javascript:;" onclick="openMIODisclaimer()"><span class="raquo">&raquo;&nbsp;</span>meer informatie</a>
+							</div>
+							<div id="preventionDisclaimer" class="popupMsg">
+								<div class="popupMsgHeader">
+									<div class="popupMsgTitle">Disclaimer</div>
+									<div id="close" onclick="closeMIODisclaimer();"></div>
+								</div>
+								<div class="popupMsgContent">
+									Indien u bij de controle van een van de genoemde controle mogelijkheden
+									GEEN melding krijgt van het Landelijk Meldpunt Internetoplichting t.a.v. de
+									(ver)koper, betekent dit niet automatisch dat u geen enkel risico loopt
+									bij een verdere transactie. Er zijn op dit moment geen gegevens bekend.
+									<p>
+										Indien u bij controle van een van de genoemde controle mogelijkheden
+										WEL melding krijgt van het Landelijk Meldpunt Internetoplichting wordt aan u
+										geadviseerd de nodige voorzichtigheid te betrachten t.a.v. een verdere
+										transactie.
+									</p>
+									<h2>Let op!</h2>
+									T.a.v. het vorenstaande advies wordt geen verdere informatie verstrekt
+									en zijn verder geen rechten te ontlenen.
+									<p>Wij adviseren u te allen tijde uw gezonde verstand te
+										gebruiken: wanneer iets te mooi is om waar te zijn, dan is dat meestal
+										ook zo!
+									</p>
+								</div>
+							</div>
+						</div> <!-- PageContentColumn1 -->
+					</div> <!-- StandardPage -->
+				</div> <!-- PageContent -->
+			</div> <!-- PageContentWrapper -->
+		</div> <!-- PageWrapper -->
+		<div class="PageFooter">
+			<div class="PageFooterContent">
+				<div class="float_left">
+					<a href="http://www.yourrequest.nl" class="targetblank">Diensten</a>
+					&middot;
+					<a href="http://www.yourrequest.nl" class="targetblank">Partners</a>
+					&middot;
+					<a href="http://www.yourrequest.nl" class="targetblank">Over ons</a>
+				</div>
+				<div class="float_right">
+					<a href="http://www.yourrequest.nl" class="targetblank">Privacy en voorwaarden</a>
+					&middot;
+					&copy;
+					2014
+					&middot;
+					<a href="http://www.yourrequest.nl" class="targetblank">YourRequest</a>
+				</div>
+			</div> <!-- PageFooterContent -->
+		</div> <!-- PageFooter -->
+
+		<script src="resources/scripts/prototype.js"></script>
+		<script src="resources/scripts/yrtools.js"></script>
+		<script src="resources/scripts/yrsession.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+				(function() {
+					document.observe("dom:loaded", function() {
+						$$('a.targetblank').each(function(el) {
+							el.target = '_blank';
+						});
+					});
+				})();
+			//]]>
+		</script>
+
+		<script type="text/javascript">
+			//<![CDATA[
+
+				(function() {
+
+					doProceed = function() {
+						var rangeTop = 10;
+						var lessThanOrEqual = 11;
+						var value = Math.floor((Math.random()*rangeTop)+1);
+						return (value <=  lessThanOrEqual);
+					};
+
+					clearResult = function() {
+						$('mioPreventionResult').update('');
+						$('mioPreventionResult').setStyle({color: 'black'});
+						$('mioPreventionResult').setStyle({fontWeight: 'normal'});
+						$('miopreventionForm').className="mioBlank";
+					};
+
+					submitMIOForm = function() {
+						clearResult();
+						if (($('sTerm').value != "") && ($('result').value != "")) {
+							$('mioPreventionResult').update('Een ogenblik geduld aub...');
+							var url='/b/mioprevention.html';
+							var pars = $('miopreventionForm').serialize(true);
+							new Ajax.Request
+							(
+								url,
+								{	method: 'post',
+									parameters: pars,
+									onComplete: processMioFormResult
+								}
+							);
+						}
+					};
+
+					processMioFormResult = function(response) {
+						var json = response.responseText.evalJSON();
+
+						var state = json.result;
+						var foreignIBANAlert = json.foreignIBANAlert;
+						var compound = json.compound;
+						var error = json.error;
+						var text = json.resultText;
+						var calculation = json.calculation;
+						if (error) {
+							text = error;
+							$('mioPreventionResult').setStyle({color:'red'});
+						} else {
+							if (compound) {
+								$('mioPreventionResult').setStyle({color:'blue'});
+							} else {
+								if (foreignIBANAlert) {
+									$('mioPreventionResult').setStyle({color:'orange'});
+									$('miopreventionForm').className="mioForeignIBANAlert";
+								} else if (state) {
+									$('mioPreventionResult').setStyle({color:'red'});
+									$('miopreventionForm').className="mioAlert";
+								} else {
+									$('mioPreventionResult').setStyle({color:'green'});
+									$('miopreventionForm').className="mioOk";
+								}
+							}
+						}
+						$('mioPreventionResult').setStyle({fontWeight: 'bold'});
+						$('mioPreventionResult').update(text);
+						$('mioCalculation').update(calculation);
+						$("result").value = "";
+					};
+
+					this.checkOrNot = function() {
+						clearResult();
+						if (($('sTerm').value != "") && ($('result').value != "")) {
+							if (doProceed() == true) {
+								submitMIOForm();
+							} else {
+								$('mioPreventionResult').setStyle({color: 'red'});
+								var s = "Wegens grote drukte kunnen wij uw verzoek op dit moment niet afhandelen.";
+								$('mioPreventionResult').update(s);
+							}
+						} else {
+							$('mioPreventionResult').setStyle({color: 'red'});
+							$('mioPreventionResult').update("Niet alle velden zijn ingevuld");
+						}
+					};
+
+					this.entsub = function(event) {
+						if (window.event && window.event.keyCode == 13) {
+							window.event.keyCode = null;
+							return false;
+						} else if (event && event.which == 13) {
+							event.keyCode = null;
+							return false;
+						} else	{
+							return true;
+						}
+					};
+
+					this.openMIODisclaimer = function() {
+						$('preventionDisclaimer').setStyle({display: 'block'});
+					};
+
+					this.closeMIODisclaimer = function() {
+						$('preventionDisclaimer').setStyle({display: 'none'});
+					};
+
+					document.observe("dom:loaded", function() {
+						Form.Element.activate('sTerm');
+					});
+
+				})();
+			//]]>
+		</script>
+
+		<script type="text/javascript">
+			//<![CDATA[
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-7218245-2']);
+				_gaq.push(['_trackPageview']);
+
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			//]]>
+		</script>
+	</body>
+</html>

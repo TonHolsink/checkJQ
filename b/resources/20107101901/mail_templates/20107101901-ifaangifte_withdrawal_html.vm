@@ -1,0 +1,26 @@
+<html>
+<head>
+<style type="text/css">$css</style>
+</head>
+<body>
+<div id="header">
+<div id="header_body">
+<h1>Aangifte</h1>
+Internetoplichting
+</div> <!-- header_body -->
+</div> <!-- header -->
+<div id="main">
+<div id="content">
+Geachte heer, mevrouw,
+<p>U heeft uw aangifte Internetoplichting met nummer $formnumber ingetrokken.<br/>
+U heeft als reden opgegeven: $reason.</p>
+<p>Met vriendelijke groet,<br/>
+Landelijk Meldpunt Internetoplichting</p>
+</div> <!-- content -->
+<div id="footer">
+<div id="footer-left"><img src="cid:waakzaam" height="20px"></div>
+<div id="footer-right"><img src="cid:politie" height="60px"></div>
+</div> <!-- footer -->
+</div> <!-- main -->
+</body>
+</html>

@@ -1,0 +1,6 @@
+validationJQ.js
+r 313 e=typeError
+r250 gaat het fout als name = required
+r121 elm == undefined
+
+na 121 klapt ie eruit met een TypeError
